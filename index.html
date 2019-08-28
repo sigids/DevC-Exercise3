@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
     <title>Exercise 3</title>
 </head>
 <body>
-    <center>
-        <h1>Daftar Planet</h1>
-    </center>
+<center>
+<h1>Daftar Planet</h1>    
+</center>
+
+
+   
+    <form>
+    <div class="form-group">
+    <i class="fa fa-search" style="font-size:16px;color:lightseagreen;"></i>
+    <label style="color: lightskyblue" for="search">Searching by Name:</label>
+    <input onkeyup="mySearch()" type="text" class="form-control" id="search" 
+     placeholder="Type Name Here">
+    </div>
+
+    </form>
+
+<!-- <div id="content"></div> -->
+
+<!-- <table id: "table"> </table>     -->
+
+<table id="table" class="order-table">
+		<thead>
+			<tr>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			</tr>
+		</tbody>
+	</table>
+
 </body>
+<script src="scripts.js"></script>   
+
+<style>
+
+body {background-color: black;}
+
+h1 {
+	margin: 1em 0 0.5em 0;
+	font-weight: 600;
+	font-family: 'Titillium Web', sans-serif;
+	position: relative;  
+	font-size: 36px;
+	line-height: 40px;
+	padding: 15px 15px 15px 15%;
+	color: #355681;
+    background: radial-gradient(rgb(69, 220, 247), rgb(70, 8, 238)) repeat center;
+
+}
+
+table {
+  border: 1px solid gray;
+  table-layout:fixed;
+  width: 3000px; 
+}
+
+#search{
+    width: 15.2em
+}
+
+table tr:hover td {
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f0f0f0));
+  background: -moz-linear-gradient(top, white, #f0f0f0);
+}
+  th  {
+          text-transform: uppercase;
+          background-color:darkblue;
+          color: white;
+          border: 1px solid blue;
+          padding: 10px;
+          text-align: center;
+  }
+  td  {
+          word-break: break-all;
+          border: 1px solid blue;
+          padding: 10px;
+  }
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}
+  tr:nth-child(odd) {background-color: #cfdaf3;}
+  </style>
+
 </html>
+
